@@ -186,3 +186,93 @@ a:hover {
   font-size: 0.9rem;
   color: #555;
 }
+
+.rdv-page {
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2d3748;
+  background: #f9f9f9;
+}
+
+.rdv-page h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.rdv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rdv-table th,
+.rdv-table td {
+  text-align: center;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.rdv-table th {
+  background-color: #0057a0;
+  color: white;
+}
+
+.rdv-available a {
+  display: block;
+  padding: 0.5rem;
+  color: #0057a0;
+  text-decoration: none;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.rdv-available a:hover {
+  background: #e6f0ff;
+}
+
+.rdv-reserved {
+  background-color: #a0c4ff;
+  color: #333;
+}
+
+.note {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.rdv-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rdv-buttons .btn {
+  background: #0057a0;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.rdv-buttons .btn:hover {
+  background: #003f80;
+}
+
+.rdv-buttons .btn-secondary {
+  background: #ccc;
+  color: #333;
+}
+
+.rdv-buttons .btn-secondary:hover {
+  background: #aaa;
+}

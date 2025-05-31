@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Sportify - Plateforme de rendez-vous sportif</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assure-toi que ce fichier existe -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico"> <!-- Facultatif -->
 </head>
 <body>
@@ -21,8 +21,7 @@ session_start();
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="toutparcourir.php">Tout parcourir</a></li>
-                    <li><a href="rdv.php">Prendre rendez-vous</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="prendre_rdv.php">Prendre rendez-vous</a></li>
                     <?php if (isset($_SESSION['user'])): ?>
                         <li><a href="profil.php">Mon Compte</a></li>
                         <li><a href="logout.php">Déconnexion</a></li>
