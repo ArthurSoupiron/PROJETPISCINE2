@@ -5,6 +5,103 @@ include('header.php');
 ?>
 
 <style>
+/* === STYLES SPÉCIFIQUES À toutparcourir.php === */
+.browse {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #0057a0;
+}
+
+/* Onglets */
+.browse-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.browse-nav .tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.browse-nav .tab-btn.active,
+.browse-nav .tab-btn:hover {
+  background-color: #0057a0;
+  color: #fff;
+}
+
+/* Contenu des onglets */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Grille de cartes */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Cartes */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  color: #0057a0;
+  margin-bottom: 10px;
+}
+
+.card p,
+.card ul {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card.full {
+  grid-column: span 2;
+  background-color: #f9f9f9;
+}
+
+/* Liens */
+.card a {
+  color: #0057a0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
 </style>
 
 <main>
@@ -16,8 +113,8 @@ include('header.php');
       <nav class="browse-nav">
         <ul>
           <li><button class="tab-btn active" data-target="activites">Activités sportives</button></li>
-          <li><button class="tab-btn"        data-target="competition">Sports de compétition</button></li>
-          <li><button class="tab-btn"        data-target="salle">Salle de sport Omnes</button></li>
+          <li><button class="tab-btn" data-target="competition">Sports de compétition</button></li>
+          <li><button class="tab-btn" data-target="salle">Salle de sport Omnes</button></li>
         </ul>
       </nav>
     </div>
@@ -90,14 +187,14 @@ include('header.php');
   </section>
 </main>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include('footer.php'); ?>
 
 <script>
   // Basculer d'un onglet à l'autre
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       btn.classList.add('active');
       document.getElementById(btn.dataset.target).classList.add('active');
     });
