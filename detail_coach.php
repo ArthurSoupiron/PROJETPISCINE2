@@ -6,7 +6,7 @@ include('header.php');
 // Sécurité des paramètres GET
 $type = isset($_GET['type']) ? htmlspecialchars($_GET['type']) : '';
 $name = isset($_GET['name']) ? htmlspecialchars($_GET['name']) : '';
-
+ 
 // Coachs d'activités sportives
 $coachs_activites = [
   'Musculation' => [
