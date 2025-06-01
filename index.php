@@ -1,11 +1,9 @@
 <?php
-// general/index.php
 $pageTitle = 'Sportify : Accueil';
 include('header.php');
 ?>
 
 <section class="section-accueil">
-  <!-- ÉVÉNEMENT -->
   <div class="colonne">
     <h3>Événement de la semaine</h3>
     <div class="event-card">
@@ -17,7 +15,6 @@ include('header.php');
     </div>
   </div>
 
-  <!-- SPÉCIALISTES -->
   <div class="colonne">
     <h3>Nos spécialistes</h3>
     <div class="coach-card">
@@ -27,7 +24,6 @@ include('header.php');
     </div>
   </div>
 
-  <!-- EMPLACEMENT -->
   <div class="colonne">
     <h3>Notre emplacement</h3>
     <iframe
