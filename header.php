@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 ?>
 
-
+ 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
