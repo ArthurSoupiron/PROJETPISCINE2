@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coachCV>
+  <coach>
+    <id>1</id>
+    <nom>Durand</nom>
+    <prenom>Alex</prenom>
+    <specialite>Musculation</specialite>
+    <photo>images/coach_muscu.jpg</photo>
+    <email>alex_durand@sportify.com</email>
+    <bureau>Bâtiment B - Salle 3</bureau>
+  </coach>
+
+  <formations>
+    <formation>
+      <annee>2015</annee>
+      <intitule>Licence STAPS (Sciences et Techniques des Activités Physiques et Sportives)</intitule>
+      <ecole>Université de Lyon</ecole>
+    </formation>
+    <formation>
+      <annee>2017</annee>
+      <intitule>Certificat de Coach Sportif Professionnel (CNCS)</intitule>
+      <ecole>Centre National de Coaching Sportif</ecole>
+    </formation>
+  </formations>
+
+  <experiences>
+    <experience>
+      <debut>2017-09</debut>
+      <fin>2019-08</fin>
+      <poste>Assistant Coach Musculation</poste>
+      <structure>GymFit Paris</structure>
+      <description>
+        Assistance aux coachs seniors dans le suivi des adhérents, programmation des séances,
+        et encadrement des cours collectifs de renforcement musculaire.
+      </description>
+    </experience>
+    <experience>
+      <debut>2019-09</debut>
+      <fin>2023-05</fin>
+      <poste>Coach Musculation Indépendant</poste>
+      <structure>Sportify (Omnes Education)</structure>
+      <description>
+        Création de programmes personnalisés, suivi nutritionnel et supervision des athlètes 
+        souhaitant préparer des compétitions de musculation.
+      </description>
+    </experience>
+  </experiences>
+
+  <coordonnees>
+    <telephone>+33 7 89 65 14 25</telephone>
+    <linkedin>https://linkedin.com/in/alex-durand</linkedin>
+  </coordonnees>
+
+  <disponibilites>
+    <jour nom="lundi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="14:00" fin="18:00"/>
+    </jour>
+    <jour nom="mercredi">
+      <creneau debut="09:00" fin="13:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+    <jour nom="vendredi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="14:00" fin="18:00"/>
+    </jour>
+  </disponibilites>
+</coachCV>
+
