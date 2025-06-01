@@ -10,13 +10,13 @@ $msg_erreur = '';
 $msg_success = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // 1) Création de l'utilisateur dans users
+    //on crée l'utilisateur dans users
     $nom       = htmlspecialchars(trim($_POST['nom']));
     $prenom    = htmlspecialchars(trim($_POST['prenom']));
     $email     = strtolower(trim($_POST['email']));
     $mdp_hache = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
 
-    // Vérification unicité email
+    // on verifie l'email
     $check = $pdo->prepare("SELECT id FROM users WHERE email = ?");
     $check->execute([$email]);
     if ($check->rowCount() > 0) {
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($insertUser->execute([$nom, $prenom, $email, $mdp_hache])) {
             $idUser = $pdo->lastInsertId();
 
-            // 2) Upload photo (facultatif)
+            // si l'utilisateur veut , il peut upload une photo
             $cheminPhoto = null;
             if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
                 $dossier  = 'uploads/coachs/';
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $cheminPhoto = $dossier . $nomFichier;
             }
 
-            // 3) Insertion dans coachs
+            // on insers les coachs
             $specialite    = htmlspecialchars(trim($_POST['specialite']));
             $cv            = htmlspecialchars(trim($_POST['cv']));
             $dispo_semaine = json_encode($_POST['dispo_semaine'] ?? []);
