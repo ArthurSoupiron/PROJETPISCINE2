@@ -1,6 +1,9 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,12 +25,13 @@ session_start();
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="toutparcourir.php">Tout parcourir</a></li>
                     <li><a href="prendre_rdv.php">Prendre rendez-vous</a></li>
-                    <?php if (isset($_SESSION['user'])): ?>
+                    
+                    <?php if (isset($_SESSION['user_id'])): ?>
                         <li><a href="profil.php">Mon Compte</a></li>
                         <li><a href="logout.php">Déconnexion</a></li>
                     <?php else: ?>
-                        <li><a href="login.php">Connexion</a></li>
-                        <li><a href="register.php">Inscription</a></li>
+                        <li><a href="connexion.php">Connexion</a></li>
+                        <li><a href="inscription.php">Inscription</a></li>
                     <?php endif; ?>
                 </ul>
             </nav>
