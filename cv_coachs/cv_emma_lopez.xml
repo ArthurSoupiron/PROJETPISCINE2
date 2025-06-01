@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coachCV>
+  <coach>
+    <id>6</id>
+    <nom>Lopez</nom>
+    <prenom>Emma</prenom>
+    <specialite>Basketball</specialite>
+    <photo>images/coach_basket.jpg</photo>
+    <email>emma_lopez@sportify.com</email>
+    <bureau>Bâtiment D - Bureau 12</bureau>
+  </coach>
+
+  <formations>
+    <formation>
+      <annee>2010</annee>
+      <intitule>DEFB (Diplôme d’Entraîneur Fédéral de Basketball)</intitule>
+      <ecole>Fédération Française de Basketball</ecole>
+    </formation>
+    <formation>
+      <annee>2013</annee>
+      <intitule>Master Entraînement et Performance Sportive</intitule>
+      <ecole>Université de Lille</ecole>
+    </formation>
+  </formations>
+
+  <experiences>
+    <experience>
+      <debut>2013-09</debut>
+      <fin>2017-06</fin>
+      <poste>Assistante Coach Équipe Amateur</poste>
+      <structure>Club Basket Nord</structure>
+      <description>
+        Encadrement des séances jeunes, préparation physique et technique des joueurs, 
+        analyse vidéo des matchs.
+      </description>
+    </experience>
+    <experience>
+      <debut>2017-09</debut>
+      <fin>2023-05</fin>
+      <poste>Coach Équipe Universitaire</poste>
+      <structure>Université d’Aix-Marseille</structure>
+      <description>
+        Coaching de l’équipe féminine universitaire, coordination des entraînements et 
+        gestion des compétitions régionales.
+      </description>
+    </experience>
+  </experiences>
+
+  <coordonnees>
+    <telephone>+33 7 88 55 44 11</telephone>
+    <linkedin>https://linkedin.com/in/emma-lopez</linkedin>
+  </coordonnees>
+
+  <disponibilites>
+    <jour nom="mardi">
+      <creneau debut="09:00" fin="13:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+    <jour nom="jeudi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="14:00" fin="18:00"/>
+    </jour>
+    <jour nom="samedi">
+      <creneau debut="10:00" fin="14:00"/>
+    </jour>
+  </disponibilites>
+</coachCV>
