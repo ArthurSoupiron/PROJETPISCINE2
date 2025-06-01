@@ -13,7 +13,7 @@ $prenom = $_SESSION['prenom'];
 $nom = $_SESSION['nom'];
 $email = $_SESSION['email'];
 $role = $_SESSION['role'];
-?>
+?> 
 
 <section class="profil-section">
     <div class="container">
