@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Garnier</nom>
+    <prenom>Pierre</prenom>
+    <specialite>Football</specialite>
+    <formation>Brevet d’Encadrement Sportif Football, CREPS de Toulouse, 2009-2011</formation>
+    <experiences>
+        <experience>
+            <poste>Éducateur Football</poste>
+            <lieu>AS Cannes</lieu>
+            <annees>2011-2015</annees>
+        </experience>
+        <experience>
+            <poste>Coach Football</poste>
+            <lieu>FC Lyonnais</lieu>
+            <annees>2015-2022</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Tactique de jeu</competence>
+        <competence>Formation jeunes</competence>
+        <competence>Analyse vidéo match</competence>
+    </competences>
+</coach>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Moreau</nom>
+    <prenom>Antoine</prenom>
+    <specialite>Cours Collectifs</specialite>
+    <formation>Licence STAPS, Université de Bordeaux, 2010-2013</formation>
+    <experiences>
+        <experience>
+            <poste>Animateur Cours Collectifs</poste>
+            <lieu>Club Med</lieu>
+            <annees>2013-2017</annees>
+        </experience>
+        <experience>
+            <poste>Coach Cours Collectifs</poste>
+            <lieu>FitnessPark Lyon</lieu>
+            <annees>2017-2021</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Zumba</competence>
+        <competence>BodyPump</competence>
+        <competence>Yoga dynamique</competence>
+    </competences>
+</coach>

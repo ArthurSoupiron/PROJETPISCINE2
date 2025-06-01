@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Bernard</nom>
+    <prenom>Lucas</prenom>
+    <specialite>Biking</specialite>
+    <formation>Certificat Cycling Pro, Institut sportif de Toulouse, 2012</formation>
+    <experiences>
+        <experience>
+            <poste>Instructeur Cycling</poste>
+            <lieu>SpinCycle Paris</lieu>
+            <annees>2013-2016</annees>
+        </experience>
+        <experience>
+            <poste>Coach Biking</poste>
+            <lieu>VeloGym Bordeaux</lieu>
+            <annees>2016-2021</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Cyclisme indoor</competence>
+        <competence>Endurance cardiovasculaire</competence>
+        <competence>Techniques de pédalage</competence>
+    </competences>
+</coach>

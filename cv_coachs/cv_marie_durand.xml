@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Durand</nom>
+    <prenom>Marie</prenom>
+    <specialite>Fitness</specialite>
+    <formation>Bachelor Fitness & Wellness, Lyon Business School, 2011-2014</formation>
+    <experiences>
+        <experience>
+            <poste>Coach Fitness</poste>
+            <lieu>FitWave Marseille</lieu>
+            <annees>2014-2017</annees>
+        </experience>
+        <experience>
+            <poste>Responsable Cours Sportifs</poste>
+            <lieu>Urban Fitness Lyon</lieu>
+            <annees>2017-2020</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Cours de fitness collectif</competence>
+        <competence>Gym douce</competence>
+        <competence>Wellness coaching</competence>
+    </competences>
+</coach>

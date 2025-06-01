@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Masson</nom>
+    <prenom>David</prenom>
+    <specialite>Plongeon</specialite>
+    <formation>Brevet d’État Plongeon, INSEP, 2011</formation>
+    <experiences>
+        <experience>
+            <poste>Coach Plongeon</poste>
+            <lieu>Piscine Olympique Paris</lieu>
+            <annees>2011-2016</annees>
+        </experience>
+        <experience>
+            <poste>Entraîneur Plongeon Junior</poste>
+            <lieu>Club Plongeon Marseille</lieu>
+            <annees>2016-2021</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Techniques de plongeon</competence>
+        <competence>Préparation physique</competence>
+        <competence>Psychologie sportive</competence>
+    </competences>
+</coach>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Lambert</nom>
+    <prenom>Camille</prenom>
+    <specialite>Rugby</specialite>
+    <formation>Licence STAPS, Université de Toulouse, 2010-2013</formation>
+    <experiences>
+        <experience>
+            <poste>Coach Rugby Minimes</poste>
+            <lieu>Rugby Club Toulonnais</lieu>
+            <annees>2013-2017</annees>
+        </experience>
+        <experience>
+            <poste>Coach Rugby Espoirs</poste>
+            <lieu>RC Toulon</lieu>
+            <annees>2017-2021</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Techniques de mêlée</competence>
+        <competence>Condition physique rugby</competence>
+        <competence>Gestion d’équipe</competence>
+    </competences>
+</coach>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Fontaine</nom>
+    <prenom>Julien</prenom>
+    <specialite>Tennis</specialite>
+    <formation>Diplôme d’Initiateur Tennis, FFT, 2012</formation>
+    <experiences>
+        <experience>
+            <poste>Initiateur Tennis</poste>
+            <lieu>Tennis Club de Paris</lieu>
+            <annees>2012-2016</annees>
+        </experience>
+        <experience>
+            <poste>Coach Tennis</poste>
+            <lieu>ATP Academy</lieu>
+            <annees>2016-2021</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Technique de frappe</competence>
+        <competence>Stratégie de match</competence>
+        <competence>Préparation mentale</competence>
+    </competences>
+</coach>

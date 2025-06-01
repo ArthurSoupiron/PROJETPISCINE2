@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Dupont</nom>
+    <prenom>Jean</prenom>
+    <specialite>Musculation</specialite>
+    <formation>Licence STAPS, Université de Paris, 2010-2013</formation>
+    <experiences>
+        <experience>
+            <poste>Coach Musculation</poste>
+            <lieu>GymPlus Paris</lieu>
+            <annees>2014-2018</annees>
+        </experience>
+        <experience>
+            <poste>Préparateur Physique</poste>
+            <lieu>Club Sportif de Lyon</lieu>
+            <annees>2018-2021</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Préparation physique</competence>
+        <competence>Coaching personnalisé</competence>
+        <competence>Nutrition sportive</competence>
+    </competences>
+</coach>

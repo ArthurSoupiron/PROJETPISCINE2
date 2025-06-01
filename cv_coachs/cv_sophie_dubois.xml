@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Dubois</nom>
+    <prenom>Sophie</prenom>
+    <specialite>Cardio-Training</specialite>
+    <formation>Master Préparation Physique, Université de Marseille, 2013-2015</formation>
+    <experiences>
+        <experience>
+            <poste>Coach Cardio</poste>
+            <lieu>CardioFit Nantes</lieu>
+            <annees>2015-2019</annees>
+        </experience>
+        <experience>
+            <poste>Coach Sportif</poste>
+            <lieu>Wellness Center Nice</lieu>
+            <annees>2019-2022</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Cardio-training</competence>
+        <competence>Réadaptation post-blessure</competence>
+        <competence>Gestion de la fréquence cardiaque</competence>
+    </competences>
+</coach>

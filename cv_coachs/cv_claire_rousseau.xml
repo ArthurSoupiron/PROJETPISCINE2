@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coach>
+    <nom>Rousseau</nom>
+    <prenom>Claire</prenom>
+    <specialite>Natation</specialite>
+    <formation>Diplôme de Maître Nageur, EMF Pro Lille, 2010</formation>
+    <experiences>
+        <experience>
+            <poste>Instructrice Natation</poste>
+            <lieu>Piscine de Lille</lieu>
+            <annees>2010-2014</annees>
+        </experience>
+        <experience>
+            <poste>Coach Natation Compétition</poste>
+            <lieu>Club Nautique Paris</lieu>
+            <annees>2014-2022</annees>
+        </experience>
+    </experiences>
+    <competences>
+        <competence>Technique de nage</competence>
+        <competence>Entraînement compétition</competence>
+        <competence>Sécurité aquatique</competence>
+    </competences>
+</coach>
