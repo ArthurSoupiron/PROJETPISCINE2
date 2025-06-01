@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Vérifie que l’utilisateur est bien connecté et a le rôle "specialiste" (coach)
+// ici on vérifie que l’utilisateur est bien connecté et a le rôle specialiste (coach)
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'specialiste') {
     header('Location: connexion.php');
     exit;
