@@ -1,105 +1,88 @@
 <?php
-$pageTitle = "Inscription - Sportify";
-include('header.php');
+session_start();
 ?>
 
-<style>
-  .form-container {
-    max-width: 500px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,.1);
-    border-radius: 10px;
-  }
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription – Sportify</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Adaptez selon vos CSS -->
+</head>
+<body>
+    <h2>Inscription</h2>
+    <form action="traitement_inscription.php" method="post">
+        <!-- Nom -->
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" required>
+        </div>
 
-  .form-container h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #2d3748;
-  }
+        <!-- Prénom -->
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" required>
+        </div>
 
-  .form-group {
-    margin-bottom: 1rem;
-  }
+        <!-- E-mail -->
+        <div class="form-group">
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" required>
+        </div>
 
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
+        <!-- Mot de passe -->
+        <div class="form-group">
+            <label for="mot_de_passe">Mot de passe :</label>
+            <input type="password" name="mot_de_passe" id="mot_de_passe" required>
+        </div>
 
-  .form-group input, .form-group select {
-    width: 100%;
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-  }
+        <!-- Sélection du rôle -->
+        <div class="form-group">
+            <label for="role">Rôle :</label>
+            <select name="role" id="role" required>
+                <option value="client">Client</option>
+                <option value="specialiste">Spécialiste (Coach)</option>
+                <option value="admin">Administrateur</option>
+            </select>
+        </div>
 
-  button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #2d3748;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
+        <!-- Champ « Code Admin » (caché par défaut, n’apparaît que si rôle = admin) -->
+        <div class="form-group" id="admin-code-field" style="display: none;">
+            <label for="admin_code">Code Admin :</label>
+            <input type="password" name="admin_code" id="admin_code">
+            <small>Entrez le code secret pour pouvoir créer un compte Administrateur.</small>
+        </div>
 
-  button:hover {
-    background-color: #1a202c;
-  }
+        <!-- Bouton d’envoi -->
+        <div class="form-group">
+            <button type="submit">S’inscrire</button>
+        </div>
+    </form>
 
-  .form-footer {
-    text-align: center;
-    margin-top: 1rem;
-  }
+    <!-- Petit script pour afficher/cacher le champ « Code Admin » selon le rôle choisi -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const roleSelect = document.getElementById('role');
+        const adminCodeField = document.getElementById('admin-code-field');
+        const adminCodeInput = document.getElementById('admin_code');
 
-  .form-footer a {
-    color: #3182ce;
-  }
-</style>
+        function toggleAdminCodeField() {
+            if (roleSelect.value === 'admin') {
+                adminCodeField.style.display = 'block';
+                adminCodeInput.setAttribute('required', 'required');
+            } else {
+                adminCodeField.style.display = 'none';
+                adminCodeInput.removeAttribute('required');
+                adminCodeInput.value = '';
+            }
+        }
 
-<div class="form-container">
-  <h2>Créer un compte</h2>
-  <form action="traitement_inscription.php" method="POST">
-    <div class="form-group">
-      <label for="nom">Nom</label>
-      <input type="text" name="nom" id="nom" required>
-    </div>
+        // Au chargement de la page, on cache ou affiche selon la valeur courante
+        toggleAdminCodeField();
 
-    <div class="form-group">
-      <label for="prenom">Prénom</label>
-      <input type="text" name="prenom" id="prenom" required>
-    </div>
-
-    <div class="form-group">
-      <label for="email">Adresse email</label>
-      <input type="email" name="email" id="email" required>
-    </div>
-
-    <div class="form-group">
-      <label for="mot_de_passe">Mot de passe</label>
-      <input type="password" name="mot_de_passe" id="mot_de_passe" required>
-    </div>
-
-    <div class="form-group">
-      <label for="role">Rôle</label>
-      <select name="role" id="role" required>
-        <option value="client">Client</option>
-        <option value="specialiste">Spécialiste</option>
-        <option value="admin">Administrateur</option>
-      </select>
-    </div>
-
-    <button type="submit">S'inscrire</button>
-
-    <div class="form-footer">
-      <p>Déjà inscrit ? <a href="connexion.php">Connexion</a></p>
-    </div>
-  </form>
-</div>
-
-<?php include('footer.php'); ?>
+        // À chaque changement du sélecteur « Rôle »
+        roleSelect.addEventListener('change', toggleAdminCodeField);
+    });
+    </script>
+</body>
+</html>

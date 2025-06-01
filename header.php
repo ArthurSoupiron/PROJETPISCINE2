@@ -4,7 +4,6 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -25,8 +24,14 @@ if (session_status() === PHP_SESSION_NONE) {
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="toutparcourir.php">Tout parcourir</a></li>
                     <li><a href="prendre_rdv.php">Prendre rendez-vous</a></li>
-                    
-                    <?php if (isset($_SESSION['user'])): ?>
+
+                    <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'specialiste'): ?>
+                        <li><a href="dashboard_coach.php">Espace Coach</a></li>
+                    <?php elseif (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+                        <li><a href="admin_panel.php">Administration</a></li>
+                    <?php endif; ?>
+
+                    <?php if (isset($_SESSION['role'])): ?>
                         <li><a href="profil.php">Mon Compte</a></li>
                         <li><a href="logout.php">Déconnexion</a></li>
                     <?php else: ?>
