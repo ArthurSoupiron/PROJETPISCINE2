@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coachCV>
+  <coach>
+    <id>9</id>
+    <nom>Petit</nom>
+    <prenom>Thomas</prenom>
+    <specialite>Tennis</specialite>
+    <photo>images/coach_tennis.jpg</photo>
+    <email>thomas_petit@sportify.com</email>
+    <bureau>Centre Sportif - Court 1</bureau>
+  </coach>
+
+  <formations>
+    <formation>
+      <annee>2008</annee>
+      <intitule>BEES Tennis (Brevet d’État d’Éducateur Sportif Tennis)</intitule>
+      <ecole>Fédération Française de Tennis</ecole>
+    </formation>
+    <formation>
+      <annee>2011</annee>
+      <intitule>Diplôme Fédéral Entraîneur</intitule>
+      <ecole>Fédération Française de Tennis</ecole>
+    </formation>
+  </formations>
+
+  <experiences>
+    <experience>
+      <debut>2011-07</debut>
+      <fin>2015-06</fin>
+      <poste>Coach Tennis Juniors</poste>
+      <structure>Académie Tennis Ouest</structure>
+      <description>
+        Encadrement des jeunes talents, préparation aux tournois régionaux, analyse 
+        technique et stratégie de jeu.
+      </description>
+    </experience>
+    <experience>
+      <debut>2015-09</debut>
+      <fin>2023-05</fin>
+      <poste>Coach Tennis Professionnel</poste>
+      <structure>Sportify (Omnes Education)</structure>
+      <description>
+        Coaching individuel et collectif de niveau compétition, 
+        préparation mentale et physique pour tournois universitaires.
+      </description>
+    </experience>
+  </experiences>
+
+  <coordonnees>
+    <telephone>+33 6 00 11 22 33</telephone>
+    <linkedin>https://linkedin.com/in/thomas-petit</linkedin>
+  </coordonnees>
+
+  <disponibilites>
+    <jour nom="lundi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="14:00" fin="18:00"/>
+    </jour>
+    <jour nom="mercredi">
+      <creneau debut="09:00" fin="13:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+    <jour nom="vendredi">
+      <creneau debut="10:00" fin="14:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+  </disponibilites>
+</coachCV>
