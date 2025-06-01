@@ -1,5 +1,4 @@
 <?php
-// cv.php : Affiche dynamiquement le contenu du CV XML d'un coach
 $coachNom = isset($_GET['coach']) ? $_GET['coach'] : '';
 $coachNomSanitized = strtolower(str_replace(' ', '_', $coachNom));
 $xmlPath = "cv/CV_$coachNomSanitized.xml";
@@ -12,7 +11,7 @@ if (!file_exists($xmlPath)) {
 $xml = simplexml_load_file($xmlPath);
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>CV de <?= $xml->coach->prenom . ' ' . $xml->coach->nom ?></title>
