@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Vérifie que l’utilisateur est bien connecté et a le rôle "admin"
+// on vérifie que l’utilisateur est bien connecté et a le rôle admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header('Location: connexion.php');
     exit;
