@@ -15,7 +15,7 @@ include('header.php');
   margin-bottom: 30px;
   text-align: center;
   color: #0057a0;
-}
+} 
 
 /* Onglets */
 .browse-nav ul {
