@@ -22,7 +22,7 @@ include('header.php');
           <th>Vendredi AM</th>
           <th>Vendredi PM</th>
         </tr>
-      </thead>
+      </thead> 
       <tbody>
         <tr>
           <td>Coach, Musculation</td>
