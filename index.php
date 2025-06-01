@@ -18,8 +18,6 @@ include('header.php');
   </div>
 
 
-
-  
   <!-- SPÉCIALISTES -->
   <div class="colonne">
     <h3>Nos spécialistes</h3>
@@ -29,7 +27,6 @@ include('header.php');
       <p>Nutrition & Fitness</p>
     </div>
   </div>
-
 
 
   
