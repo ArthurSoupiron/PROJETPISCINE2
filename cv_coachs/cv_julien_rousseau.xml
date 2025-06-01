@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coachCV>
+  <coach>
+    <id>3</id>
+    <nom>Rousseau</nom>
+    <prenom>Julien</prenom>
+    <specialite>Biking</specialite>
+    <photo>images/coach_biking.png</photo>
+    <email>julien_rousseau@sportify.com</email>
+    <bureau>Bâtiment C - Studio 1</bureau>
+  </coach>
+
+  <formations>
+    <formation>
+      <annee>2013</annee>
+      <intitule>Licence STAPS (Option Cyclisme)</intitule>
+      <ecole>Université de Nantes</ecole>
+    </formation>
+    <formation>
+      <annee>2016</annee>
+      <intitule>Diplôme d’Entraîneur Cyclisme (Fédération Française de Cyclisme)</intitule>
+      <ecole>FFCyclisme</ecole>
+    </formation>
+  </formations>
+
+  <experiences>
+    <experience>
+      <debut>2016-02</debut>
+      <fin>2018-11</fin>
+      <poste>Assistant Entraîneur Cyclisme</poste>
+      <structure>Club Cycliste Atlantique</structure>
+      <description>
+        Encadrement des équipes amateurs, préparation physique des coureurs, organisation de stages VTT.
+      </description>
+    </experience>
+    <experience>
+      <debut>2019-01</debut>
+      <fin>2023-05</fin>
+      <poste>Coach Biking</poste>
+      <structure>Sportify (Omnes Education)</structure>
+      <description>
+        Cours de spinning en salle, suivi personnalisé des adhérents et accompagnement 
+        aux compétitions locales.
+      </description>
+    </experience>
+  </experiences>
+
+  <coordonnees>
+    <telephone>+33 7 65 47 28 34</telephone>
+    <linkedin>https://linkedin.com/in/julien-rousseau</linkedin>
+  </coordonnees>
+
+  <disponibilites>
+    <jour nom="mercredi">
+      <creneau debut="07:00" fin="11:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+    <jour nom="vendredi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="14:00" fin="18:00"/>
+    </jour>
+    <jour nom="samedi">
+      <creneau debut="10:00" fin="14:00"/>
+    </jour>
+  </disponibilites>
+</coachCV>
