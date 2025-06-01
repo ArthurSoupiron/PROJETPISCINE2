@@ -1,6 +1,6 @@
 <?php
 // general/index.php
-
+$pageTitle = 'Sportify : Accueil';
 include('header.php');
 ?>
 
