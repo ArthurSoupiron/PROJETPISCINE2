@@ -1,9 +1,9 @@
 <?php
 session_start();
-require_once 'config.php'; // Votre connexion PDO vers MySQL (ex : $pdo = new PDO(...))
+require_once 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // 1) Vérification que tous les champs de base sont envoyés et non vides
+    //on  Vérifi que tous les champs de base sont envoyés et non vides
     if (
         isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['mot_de_passe'], $_POST['role'])
         && !empty($_POST['nom'])
@@ -17,26 +17,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email        = strtolower(trim($_POST['email']));
         $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
 
-        // 2) Validation du rôle choisi
+        // ici nous validons le role choisi
         $autorized_roles = ['client', 'specialiste', 'admin'];
         if (in_array($_POST['role'], $autorized_roles)) {
             $role = $_POST['role'];
         } else {
-            // Si valeur non reconnue, on force par défaut sur "client"
+            // Si la valeur est non reconnue, on force par défaut le compte client
             $role = 'client';
         }
 
-        // 3) S’il s’agit d’un compte « admin », on vérifie le code secret
+        // si il demande un code admin , il faut que l'utilisateur rentre le mot de passe secret qui est 123
         if ($role === 'admin') {
             if (!isset($_POST['admin_code']) || $_POST['admin_code'] !== '123') {
-                // Code manquant ou incorrect : on refuse l’inscription
+                // Code de manquant ou incorrect : on refuse l’inscription
                 echo "Code Admin incorrect ! Vous n’êtes pas autorisé(e) à créer un compte administrateur.";
                 echo " <a href='inscription.php'>Retour à l’inscription</a>";
                 exit;
             }
         }
 
-        // 4) On vérifie qu’aucun autre utilisateur n’a déjà enregistré ce même e-mail
+        //cela nous permet de verifier d'un utilisateur n'a pas deja utilise cette email
         $check = $pdo->prepare("SELECT id FROM users WHERE email = ?");
         $check->execute([$email]);
         if ($check->rowCount() > 0) {
@@ -44,7 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
 
-        // 5) Insertion en base avec le rôle choisi
         $insert = $pdo->prepare("
             INSERT INTO users (nom, prenom, email, mot_de_passe, role)
             VALUES (?, ?, ?, ?, ?)
@@ -64,7 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 } else {
-    // Si on arrive ici sans passer par le formulaire POST
     header('Location: inscription.php');
     exit;
 }
