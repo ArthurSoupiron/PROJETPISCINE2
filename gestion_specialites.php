@@ -9,13 +9,13 @@ require_once 'config.php';
 $msg_erreur = '';
 $msg_success = '';
 
-// Traitement de l’ajout d’une nouvelle spécialité
+//on traite l’ajout d’une nouvelle spécialité
 if (isset($_POST['action']) && $_POST['action'] === 'ajout_specialite') {
     $nouvelle = htmlspecialchars(trim($_POST['nouvelle_specialite']));
     if ($nouvelle === '') {
         $msg_erreur = "Le nom de la spécialité ne peut pas être vide.";
     } else {
-        // Vérifier unicité
+        // on vérifie  son unicité
         $check = $pdo->prepare("SELECT id FROM specialites WHERE nom_specialite = ?");
         $check->execute([$nouvelle]);
         if ($check->rowCount() > 0) {
@@ -28,7 +28,7 @@ if (isset($_POST['action']) && $_POST['action'] === 'ajout_specialite') {
     }
 }
 
-// Traitement de la suppression d’une spécialité
+// cela nous permet de supprimer specialite
 if (isset($_GET['suppr_id']) && ctype_digit($_GET['suppr_id'])) {
     $idSuppr = (int)$_GET['suppr_id'];
     // Supprimer les liaisons éventuelles dans coach_specialites
@@ -39,7 +39,6 @@ if (isset($_GET['suppr_id']) && ctype_digit($_GET['suppr_id'])) {
     $msg_success = "Spécialité supprimée.";
 }
 
-// Récupérer toutes les spécialités
 $stmt = $pdo->query("SELECT id, nom_specialite FROM specialites ORDER BY nom_specialite");
 $specialites = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -54,7 +53,6 @@ include 'header.php';
     <div style="color: green;"><?= $msg_success ?></div>
 <?php endif; ?>
 
-<!-- Formulaire d’ajout -->
 <section>
     <h3>Ajouter une nouvelle spécialité</h3>
     <form action="gestion_specialites.php" method="post">
@@ -69,7 +67,7 @@ include 'header.php';
 
 <hr>
 
-<!-- Liste des spécialités existantes -->
+// liste des spécialités existantes
 <section>
     <h3>Spécialités existantes</h3>
     <?php if (count($specialites) === 0): ?>
