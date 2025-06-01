@@ -15,7 +15,7 @@ include('header.php');
   margin-bottom: 30px;
   text-align: center;
   color: #0057a0;
-} 
+}
 
 /* Onglets */
 .browse-nav ul {
@@ -162,24 +162,34 @@ include('header.php');
       <div id="salle" class="tab-content">
         <div class="grid">
           <div class="card full">
-            <h3>Règles & Horaires</h3>
+            <h3>Règles et informations générales</h3>
             <ul>
-              <li>Utilisation des machines</li>
-              <li>Horaires d’ouverture</li>
-              <li>Questionnaire nouvel utilisateur</li>
+              <li><strong>Utilisation des machines :</strong> désinfecter après usage, respect des temps de rotation (30 min).</li>
+              <li><strong>Horaires :</strong> du lundi au samedi de 6h à 22h. Fermé dimanche.</li>
+              <li><strong>Questionnaire d'inscription :</strong> <a target="_blank">Télécharger ici</a></li>
             </ul>
           </div>
           <div class="card">
-            <h3>Responsables</h3>
+            <h3>Responsable principal</h3>
             <p>
-              <strong>Mr Jean Dupont</strong><br>
-              Bureau : Bât. A, Rdc<br>
-              Tél : 01 23 45 67 89
+              <strong>Jean Dupont</strong><br>
+              Bureau : Bâtiment A, Rez-de-chaussée<br>
+              Tél : 01 23 45 67 89<br>
+              Email : jean.dupont@sportify.com
             </p>
           </div>
           <div class="card">
-            <h3>Prendre un RDV</h3>
-            <p><a href="rdv_salle.php">→ Réserver une visite</a></p>
+            <h3>Responsable adjoint</h3>
+            <p>
+              <strong>Claire Morel</strong><br>
+              Bureau : Bâtiment A, Bureau 12<br>
+              Tél : 06 78 34 90 12<br>
+              Email : claire.morel@sportify.com
+            </p>
+          </div>
+          <div class="card">
+            <h3>Réserver une séance</h3>
+            <p><a href="prendre_rdv.php">→ Prendre un rendez-vous</a></p>
           </div>
         </div>
       </div>

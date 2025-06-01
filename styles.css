@@ -17,11 +17,11 @@ body {
 /* HEADER */
 header {
     background-color: #0057a0;
-    color: #fff;                                                                   
+    color: #fff;
     padding: 20px 0;
     margin-bottom: 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}  
+}
 
 .header-container {
     width: 90%;
@@ -31,7 +31,6 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .logo {
     display: flex;
@@ -309,3 +308,24 @@ a:hover {
   color: #e53e3e;
   text-decoration: none;
 }
+
+
+/*rdv coach*/
+<style>
+.no-dispo {
+  color: #a00;
+  font-style: italic;
+}
+.btn-mini {
+  background-color: #0057a0;
+  color: #fff;
+  padding: 6px 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.btn-mini:hover {
+  background-color: #004080;
+}
+</style>

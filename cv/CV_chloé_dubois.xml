@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coachCV>
+  <coach>
+    <id>8</id>
+    <nom>Dubois</nom>
+    <prenom>Chloé</prenom>
+    <specialite>Rugby</specialite>
+    <photo>images/coach_rugby.jpg</photo>
+    <email>chloe_dubois@sportify.com</email>
+    <bureau>Bâtiment A - Terrain</bureau>
+  </coach>
+
+  <formations>
+    <formation>
+      <annee>2011</annee>
+      <intitule>BPJEPS Rugby</intitule>
+      <ecole>Institut National des Sports</ecole>
+    </formation>
+    <formation>
+      <annee>2014</annee>
+      <intitule>Diplôme Fédéral Entraîneur Niveau 1</intitule>
+      <ecole>Fédération Française de Rugby</ecole>
+    </formation>
+  </formations>
+
+  <experiences>
+    <experience>
+      <debut>2014-09</debut>
+      <fin>2018-06</fin>
+      <poste>Coach Juniors</poste>
+      <structure>Club Rugby Ouest</structure>
+      <description>
+        Encadrement des sections U16 et U18, suivi technique et physique des jeunes joueurs.
+      </description>
+    </experience>
+    <experience>
+      <debut>2018-09</debut>
+      <fin>2023-05</fin>
+      <poste>Entraîneuse Équipe Sénior</poste>
+      <structure>Sportify (Omnes Education)</structure>
+      <description>
+        Responsable de l’équipe féminine senior, organisation des matchs, préparation 
+        des stratégies de jeu en compétition universitaire.
+      </description>
+    </experience>
+  </experiences>
+
+  <coordonnees>
+    <telephone>+33 6 55 44 33 22</telephone>
+    <linkedin>https://linkedin.com/in/chloe-dubois</linkedin>
+  </coordonnees>
+
+  <disponibilites>
+    <jour nom="mardi">
+      <creneau debut="10:00" fin="14:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+    <jour nom="jeudi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="13:00" fin="17:00"/>
+    </jour>
+    <jour nom="samedi">
+      <creneau debut="09:00" fin="13:00"/>
+    </jour>
+  </disponibilites>
+</coachCV>

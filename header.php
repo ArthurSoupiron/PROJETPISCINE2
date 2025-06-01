@@ -4,6 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -25,7 +26,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     <li><a href="toutparcourir.php">Tout parcourir</a></li>
                     <li><a href="prendre_rdv.php">Prendre rendez-vous</a></li>
                     
-                    <?php if (isset($_SESSION['user_id'])): ?>
+                    <?php if (isset($_SESSION['user'])): ?>
                         <li><a href="profil.php">Mon Compte</a></li>
                         <li><a href="logout.php">Déconnexion</a></li>
                     <?php else: ?>
@@ -37,6 +38,4 @@ if (session_status() === PHP_SESSION_NONE) {
         </div>
     </header>
 
-
-    
     <main>

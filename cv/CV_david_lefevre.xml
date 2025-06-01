@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coachCV>
+  <coach>
+    <id>5</id>
+    <nom>Lefevre</nom>
+    <prenom>David</prenom>
+    <specialite>Cours Collectifs</specialite>
+    <photo>images/coach_cours_collectif.jpg</photo>
+    <email>david_lefevre@sportify.com</email>
+    <bureau>Salle Polyvalente</bureau>
+  </coach>
+
+  <formations>
+    <formation>
+      <annee>2012</annee>
+      <intitule>BPJEPS Activités Gymniques, de la Forme et de la Force</intitule>
+      <ecole>Centre National de la Forme</ecole>
+    </formation>
+    <formation>
+      <annee>2015</annee>
+      <intitule>Certificat Animateur Zumba et Pilates</intitule>
+      <ecole>École Française de Fitness</ecole>
+    </formation>
+  </formations>
+
+  <experiences>
+    <experience>
+      <debut>2012-07</debut>
+      <fin>2016-12</fin>
+      <poste>Instructeur Zumba et Pilates</poste>
+      <structure>Club Santé Dynamique</structure>
+      <description>
+        Animation de cours collectifs de Zumba, Pilates et renforcement musculaire, 
+        suivi individuel des adhérents.
+      </description>
+    </experience>
+    <experience>
+      <debut>2017-01</debut>
+      <fin>2023-05</fin>
+      <poste>Animateur Cours Collectifs</poste>
+      <structure>Sportify (Omnes Education)</structure>
+      <description>
+        Coordination des plannings de cours, formation des nouveaux coachs et création 
+        de nouvelles chorégraphies FIT.
+      </description>
+    </experience>
+  </experiences>
+
+  <coordonnees>
+    <telephone>+33 7 64 25 18 37</telephone>
+    <linkedin>https://linkedin.com/in/david-lefevre</linkedin>
+  </coordonnees>
+
+  <disponibilites>
+    <jour nom="lundi">
+      <creneau debut="08:00" fin="12:00"/>
+      <creneau debut="14:00" fin="18:00"/>
+    </jour>
+    <jour nom="mardi">
+      <creneau debut="10:00" fin="13:00"/>
+      <creneau debut="15:00" fin="19:00"/>
+    </jour>
+    <jour nom="jeudi">
+      <creneau debut="07:00" fin="11:00"/>
+      <creneau debut="13:00" fin="17:00"/>
+    </jour>
+    <jour nom="vendredi">
+      <creneau debut="09:00" fin="12:00"/>
+    </jour>
+  </disponibilites>
+</coachCV>

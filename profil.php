@@ -13,7 +13,7 @@ $prenom = $_SESSION['prenom'];
 $nom = $_SESSION['nom'];
 $email = $_SESSION['email'];
 $role = $_SESSION['role'];
-?> 
+?>
 
 <section class="profil-section">
     <div class="container">
@@ -27,7 +27,7 @@ $role = $_SESSION['role'];
             <h3>Mes fonctionnalités client</h3>
             <ul>
                 <li><a href="prendre_rdv.php">Prendre un rendez-vous</a></li>
-                <li><a href="mes_rendezvous.php">Voir mes rendez-vous</a></li>
+                <li><a href="mes_rdv.php">Voir mes rendez-vous</a></li>
                 <li><a href="messagerie.php">Messagerie</a></li>
             </ul>
 

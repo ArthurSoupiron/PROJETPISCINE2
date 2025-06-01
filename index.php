@@ -17,7 +17,6 @@ include('header.php');
     </div>
   </div>
 
-
   <!-- SPÉCIALISTES -->
   <div class="colonne">
     <h3>Nos spécialistes</h3>
@@ -28,8 +27,6 @@ include('header.php');
     </div>
   </div>
 
-
-  
   <!-- EMPLACEMENT -->
   <div class="colonne">
     <h3>Notre emplacement</h3>

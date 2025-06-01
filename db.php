@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'sportify';
 $user = 'root';
-$pass = ''; // Laisser vide par défaut sous XAMPP
+$pass = ''; 
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

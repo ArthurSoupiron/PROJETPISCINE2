@@ -1,5 +1,5 @@
 <?php
-// connexion/login.php
+//login.php
 session_start();
 
 // Traitement du formulaire
